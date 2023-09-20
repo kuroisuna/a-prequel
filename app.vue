@@ -1,9 +1,6 @@
 <template>
   <div>
     <VitePwaManifest />
-    <AIndex />
-    <UContainer>
-      <NuxtPage />
-    </UContainer>
+    <NuxtPage />
   </div>
 </template>

@@ -12,6 +12,7 @@
   "devDependencies": {
     "@nuxt/content": "^2.8.2",
     "@nuxt/devtools": "latest",
+    "@nuxtjs/google-fonts": "^3.0.2",
     "@vite-pwa/assets-generator": "^0.0.10",
     "@vite-pwa/nuxt": "^0.1.1",
     "nuxt": "^3.7.3"

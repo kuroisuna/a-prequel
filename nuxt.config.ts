@@ -1,11 +1,29 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@vite-pwa/nuxt', '@nuxt/ui'],
+  modules: ['@nuxt/ui', '@nuxt/content', '@vite-pwa/nuxt', '@nuxtjs/google-fonts'],
 
   app: {
     head: {
       titleTemplate: '%s - Una protosecuela',
+    },
+  },
+
+  googleFonts: {
+    families: {
+      Vollkorn: [400, 600],
+      'Source Serif 4': true,
+    },
+  },
+
+  tailwindcss: {
+    config: {
+      theme: {
+        fontFamily: {
+          display: ['Vollkorn'],
+          serif: ['"Source Serif 4"'],
+        },
+      },
     },
   },
 

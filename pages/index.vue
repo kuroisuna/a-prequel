@@ -3,12 +3,13 @@ useHead({ title: 'Índice' })
 </script>
 
 <template>
-  <main>
+  <ABookCover>
+    <img class="mx-auto w-20 sm:w-24 mb-16" src="/we.svg" />
+
     <ContentList v-slot="{ list }">
       <div v-for="story in list" :key="story._path">
-        <h2>{{ story.title }}</h2>
-        <p>{{ story.description }}</p>
+        <AChapterTile :item="story" />
       </div>
     </ContentList>
-  </main>
+  </ABookCover>
 </template>
