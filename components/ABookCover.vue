@@ -1,7 +1,8 @@
 <template>
   <UContainer
     :ui="{
-      base: 'min-h-[calc(100dvh)] flex flex-col',
+      base: 'flex flex-col',
+      constrained: 'max-w-xl min-h-[calc(100dvh)]',
       padding: 'p-3',
     }"
   >

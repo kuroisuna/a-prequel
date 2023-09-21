@@ -12,7 +12,8 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Vollkorn: [400, 600],
-      'Source Serif 4': true,
+      BioRhyme: [300, 700],
+      'Source Serif 4': [300, 400, 600],
     },
   },
 
@@ -20,6 +21,7 @@ export default defineNuxtConfig({
     config: {
       theme: {
         fontFamily: {
+          script: ['BioRhyme'],
           display: ['Vollkorn'],
           serif: ['"Source Serif 4"'],
         },

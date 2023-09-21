@@ -11,9 +11,9 @@ const thumbFilename = `${props.item.name}@0.1x.png`
 
 <template>
   <div class="flex gap-4 items-center">
-    <UAvatar size="xl" :src="`/assets/chapters/${thumbFilename}`" img-class="bg-black opacity-50" />
-    <NuxtLink class="font-display text-lg md:text-xl hover:underline" :to="item._path">
-      <strong class="block text-bold text-xl mr-2 no-underline">{{ item.chapter }}</strong>
+    <!-- <UAvatar size="xl" :src="`/assets/chapters/${thumbFilename}`" :alt="item.chapter" img-class="bg-black opacity-50" /> -->
+    <NuxtLink class="font-display text-lg md:text-xl md:text-gray-500 hover:text-white duration-300" :to="item._path">
+      <strong class="block text-bold text-xl mr-2 !no-underline">{{ item.chapter }}</strong>
       {{ item.title }}
     </NuxtLink>
     <!-- <ATapePlayer /> -->
