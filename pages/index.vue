@@ -7,7 +7,7 @@ useHead({ title: 'Índice' })
     <div class="h-24 max-w-full overflow-hidden pb-20 pt-6">
       <ASilentLetter
         label="Proto\secuela"
-        message="Vivimos en un mundo imperfecto donde existe la muerte. No por un acto de odio hacia nostros, o algún tipo de venganza que estemos sufriendo. Nuestro creador quería lo mejor, solo que sus planes no fueron exitosos. Por lo que debemos ver la vida como una oportunidad de ser como el pez que nada río arriba contra la corriente y al llegar a a cima se transformó en dragón..."
+        message="Vivimos en un mundo imperfecto donde existe la muerte. No por un acto de odio hacia nosotros, o algún tipo de venganza que estemos sufriendo. Nuestro creador quería lo mejor, solo que sus planes no fueron exitosos. Por lo que debemos ver la vida como una oportunidad de ser como el pez que nada río arriba contra la corriente y que al llegar a la cima da un salto y se transforma en dragón..."
       />
     </div>
 
