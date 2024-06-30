@@ -43,7 +43,7 @@ function animateLetters() {
       'ease-in-out',
       'underline',
       'decoration-transparent',
-      'underline-offset-4',
+      'underline-offset-8',
       'decoration-2',
     )
 
@@ -59,7 +59,7 @@ function animateLetters() {
     // Trigger fade-out and width decrease, then remove after duration
     setTimeout(() => {
       letter.classList.remove('opacity-100', 'max-w-full', 'decoration-transparent')
-      letter.classList.add('max-w-0', 'decoration-slate-200', 'opacity-25')
+      letter.classList.add('max-w-0', 'decoration-slate-400', 'opacity-50')
       setTimeout(() => {
         if (element.value?.contains(letter)) {
           element.value.removeChild(letter)
