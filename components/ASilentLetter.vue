@@ -43,8 +43,8 @@ function animateLetters() {
       'ease-in-out',
       'underline',
       'decoration-transparent',
-      'underline-offset-8',
-      'decoration-4',
+      'underline-offset-4',
+      'decoration-2',
     )
 
     if (element.value) {

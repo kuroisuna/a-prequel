@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Vollkorn: [400, 600],
-      BioRhyme: [300, 400, 700],
+      BioRhyme: [300, 400, 600, 700],
       'Source Serif 4': [300, 400, 600],
       'Comic Neue': [300, 400, 700],
       'JetBrains Mono': [300, 400, 600],
