@@ -10,16 +10,16 @@ const { data } = await useAsyncData('home', () => queryContent(route.path).findO
       <UButton icon="i-heroicons-bars-3-bottom-left" color="white" variant="ghost" size="xl" :padded="false" />
     </NuxtLink>
 
-    <div class="lg:grid grid-cols-3 gap-6">
+    <div class="grid-cols-3 gap-6 lg:grid">
       <header class="mt-12 lg:mt-8">
-        <h1 class="text-center font-display font-bold text-4xl">{{ data?.chapter }} • {{ data?.title }}</h1>
+        <h1 class="font-display text-center text-4xl font-bold">{{ data?.chapter }} • {{ data?.title }}</h1>
       </header>
 
       <main class="col-span-2">
-        <article class="mx-auto font-serif prose prose-lg lg:prose-xl dark:prose-invert leading-loose">
+        <article class="prose prose-lg lg:prose-xl dark:prose-invert mx-auto font-serif leading-loose">
           <ContentDoc>
             <template #empty>
-              <p class="text-center mt-12 lg:mt-8">Contenido no disponible</p>
+              <p class="mt-12 text-center lg:mt-8">Contenido no disponible</p>
             </template>
           </ContentDoc>
         </article>

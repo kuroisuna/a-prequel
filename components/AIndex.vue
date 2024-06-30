@@ -1,9 +1,7 @@
 <script setup lang="ts">
 const isOpen = ref(false)
 
-const { data: navigation } = await useAsyncData('navigation', () =>
-  fetchContentNavigation()
-)
+await useAsyncData('navigation', () => fetchContentNavigation())
 </script>
 
 <template>

@@ -10,13 +10,13 @@ const thumbFilename = `${props.item.name}@0.1x.png`
 </script>
 
 <template>
-  <div class="flex gap-4 items-center">
+  <div class="flex items-center gap-4">
     <!-- <UAvatar size="xl" :src="`/assets/chapters/${thumbFilename}`" :alt="item.chapter" img-class="bg-black opacity-50" /> -->
     <NuxtLink
-      class="font-display text-xl md:text-xl md:text-gray-600 dark:md:text-gray-200 duration-300"
+      class="font-display text-xl duration-300 md:text-xl md:text-gray-600 dark:md:text-gray-200"
       :to="item._path"
     >
-      <strong class="text-bold text-black dark:text-white font-serif text-xl mr-1 !no-underline">{{
+      <strong class="text-bold mr-1 font-serif text-xl text-black !no-underline dark:text-white">{{
         item.chapter
       }}</strong>
       {{ item.title }}

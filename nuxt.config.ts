@@ -12,24 +12,38 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Vollkorn: [400, 600],
-      BioRhyme: [300, 700],
+      BioRhyme: [300, 400, 700],
       'Source Serif 4': [300, 400, 600],
       'Comic Neue': [300, 400, 700],
+      'JetBrains Mono': [300, 400, 600],
     },
   },
 
   tailwindcss: {
     config: {
-      content: [
-        'content/**/*.md',
+      content: ['content/**/*.md'],
+      safelist: [
+        'font-comic',
+        'max-w-xs',
+        'whitespace-nowrap',
+        'font-serif',
+        'text-6xl',
+        'opacity-0',
+        'opacity-100',
+        'scale-0',
+        'scale-100',
+        'transition-all',
+        'duration-500',
+        'ease-in-out',
+        'text-transparent',
       ],
-      safelist: ['font-comic'],
       theme: {
         fontFamily: {
           script: ['BioRhyme'],
           display: ['Vollkorn'],
           serif: ['"Source Serif 4"'],
           comic: ['"Comic Neue"'],
+          mono: ['"JetBrains Mono"'],
         },
       },
     },

@@ -6,8 +6,8 @@
       padding: 'p-3',
     }"
   >
-    <div class="p-3 flex-1 flex flex-col">
-      <div class="p-6 flex-1">
+    <div class="flex flex-1 flex-col p-3">
+      <div class="flex-1 p-6">
         <slot />
       </div>
     </div>
